@@ -178,6 +178,7 @@ function checkAnswer(event) {
             console.log(addPoints);
             points = points +  addPoints;
             score.innerText = "Points :" + points;
+            stateName.style.color = "#90EE90"
             console.log("Maharastra");
         }
         else if (pixelData[0] === 166 && pixelData[1] === 189 && pixelData[2] === 219 && stateName.innerText == "Madhya Pradesh") {
