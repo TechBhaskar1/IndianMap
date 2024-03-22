@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&family=Madimi+One&family=Overlock+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Laila:wght@300;400;500;600;700&family=Madimi+One&family=MuseoModerno:ital@0;1&family=Overlock+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Kode+Mono:wght@400..700&family=Laila:wght@300;400;500;600;700&family=Madimi+One&family=MuseoModerno:ital@0;1&family=Overlock+SC&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        background-color: #3C3633;
+    }
+    #myCanvas{
+        border: 15px solid #ECE3CE;
+            }
+    #child1,#child2{
+        padding-top: 50px;
+    }
+    h1{
+        color: #747264;
+        font-family: "Overlock SC", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 3vw;
+        border:2px #3C3633 solid;
+        background-color: #EEEDEB;
+        padding: 10px;
+        width: 40vw;
+      }
+    #state{
+        font-size: 4.5vw;
+        color: #EEEDEB;
+        font-family: "MuseoModerno", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    #stateLabel{
+        color: #E0CCBE;
+        font-size: 4.5vw;
+        font-weight:100;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+    #start{
+        width: 15vw; 
+        height: 5vh;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    #progressBar{
+        width: 48vw;
+        background-color: white;
+        color: rgb(4, 2, 2);
+        border-radius: 20px;
+        text-align: left   ;
+          
+        margin-top:60px;
+        
+    }
+    #bar{
+        width: 100%;
+        text-align: right;
+        background-color: greenyellow;
+        padding: 10px;
+        border-radius: 20px;
+        padding-right:2vw;
+        color: #3f8300;
+        font-family: "Kode Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 15px;
+    }
+
+    .score{
+        font-size: 50px;
+        color: #EEEDEB;
+        font-family: "Kode Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+
+    }
+</style>
+<body>
+    <div id="parent">
+        <center>
+        <div id="child1" class="col-lg-5 col-sm-10">
+        <canvas id="myCanvas" ></canvas>
+        </div>
+
+        <div id="child2" class="col-lg-7 col-sm-12">
+            <h1>Locate States & UTs</h1>
+            <br>
+            <h2 id="stateLabel">
+               <u>State : </u> 
+            </h2><br>
+            <h2 id = "state">---------------
+            </h2>
+            <button class="btn btn-success" id = "start" >Start</button>
+            <br><br><br>
+            <p class="score" id="point">Points : 0</p>
+            <div id="progressBar">
+                <div id="bar">0 s</div>
+            </div>
+        </div>
+    </div>
+        </center>
+    <script src="main.js"></script>
+
+</body> 
+</html>
